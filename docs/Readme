@@ -51,7 +51,7 @@ pip install -r requirements.txt
 
 ▶️ Running the Project
 1. Start FastAPI Backend
-uvicorn api:app --reload
+uvicorn main:app --reload
 
 
 Runs at: http://localhost:8000
@@ -63,7 +63,7 @@ curl -X POST http://localhost:8000/ask \
      -d '{"question": "What is the leave policy?", "userId": "demo"}'
 
 2. Start Streamlit Frontend
-streamlit run ui.py
+streamlit run streamlit_app.py
 
 
 Runs at: http://localhost:8501
